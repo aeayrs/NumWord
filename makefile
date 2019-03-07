@@ -8,7 +8,7 @@ EXE = NumWord.exe
 all: $(EXE)
 
 clean:
-	-rm *.o *.exe
+	-rm -f *.o *.d *.exe
 	
 $(EXE): $(OBJS)
 	g++ -L$(GTEST_LIB) -o $@ $^ $(GTEST_LIBLIST)
